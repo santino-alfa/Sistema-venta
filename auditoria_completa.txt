@@ -1,0 +1,80 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261113114459
+Nombre de usuario: MARULETE\santi
+Usuario RunAs: MARULETE\santi
+Nombre de la configuración: 
+Máquina: MARULETE (Microsoft Windows NT 10.0.26300.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 4684
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\santi\Desktop\auditoria_completa.txt
+PS C:\WINDOWS\system32> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\WINDOWS\system32> cd $HOME\Desktop
+PS C:\Users\santi\Desktop> git status
+        ./
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{34385532-6f33-11f1-96af-580205afde32}.TM.blf
+        ../NTUSER.DAT{34385532-6f33-11f1-96af-580205afde32}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{34385532-6f33-11f1-96af-580205afde32}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ../oinstall_tmp/
+        ../source/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\santi\Desktop> cd Sistema_ventas
+PS C:\Users\santi\Desktop\Sistema_ventas> git status
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git add .
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git commit -m "Primer commit"
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git branch -M main
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git push -u origin main
+
+PS C:\Users\santi\Desktop\Sistema_ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+PS C:\Users\santi\Desktop\Sistema_ventas> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\santi\Desktop\Sistema_ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\santi\Desktop\Sistema_ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\santi\Desktop\Sistema_ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13/11/2026     11:47                Pruebas_Unitarias
+
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git add .
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\santi\Desktop\Sistema_ventas> git push
+
+PS C:\Users\santi\Desktop\Sistema_ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261113114823
+**********************
